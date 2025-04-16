@@ -1,17 +1,17 @@
 {{ define "main" }}
-<main class="w3-content" style="max-width:720px; margin-top:48px;">
+<main class="w3-content" style="max-width:720px;">
   <div class="w3-card-4 w3-round-large w3-white">
-    <header class="w3-container w3-blue w3-center w3-padding-32">
-      <h2>{{ .Title }}</h2>
-    </header>
+    <div class="w3-container w3-blue w3-center w3-padding-32">
+      <h3 class="w3-text-white">{{ .Title }}</h3>
+    </div>
 
     <div class="w3-container w3-center w3-padding-24">
-      <p class="w3-xlarge">{{ .Content }}</p>
+      <p class="">{{ .Content }}</p>
 
-      <div class="w3-margin-top w3-padding-16">
+      <div class=" w3-padding-16">
         {{ with .Params.phone }}
-        <a href="tel:{{ . }}" class="w3-button w3-border w3-round-large w3-blue w3-margin-top w3-hover-shadow">
-          <i class="fas fa-phone"></i> تماس بگیرید
+        <a href="tel:{{ . }}" class="w3-button w3-border w3-round-large w3-orange w3-margin-top w3-hover-shadow">
+          <i class="fas fa-phone"></i> <b>{{ . }}</b>
         </a><br>
         {{ end }}
 
@@ -22,13 +22,13 @@
         {{ end }}
 
         {{ with .Params.instagram }}
-        <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-pale-red w3-margin-top w3-hover-shadow">
+        <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-pink w3-margin-top w3-hover-shadow">
           <i class="fab fa-instagram"></i> مشاهده در اینستاگرام
         </a><br>
         {{ end }}
 
         {{ with .Params.website }}
-        <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-dark-gray w3-margin-top w3-hover-shadow">
+        <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-blue w3-margin-top w3-hover-shadow">
           <i class="fas fa-globe"></i> ورود به وب‌سایت
         </a><br>
         {{ end }}
@@ -36,4 +36,10 @@
     </div>
   </div>
 </main>
+
+<style>
+  header {
+    display: none;
+  }
+</style>
 {{ end }}
