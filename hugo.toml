@@ -1,4 +1,4 @@
-baseURL = 'https://pioush-chap.ir/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'پیوش چاپ'
 theme = 'papermod'
