@@ -6,30 +6,30 @@
     </div>
 
     <div class="w3-container w3-center w3-padding-24">
-      <p class="">{{ .Content }}</p>
+      {{ .Content }}
 
       <div class=" w3-padding-16">
         {{ with .Params.phone }}
         <a href="tel:{{ . }}" class="w3-button w3-border w3-round-large w3-orange w3-margin-top w3-hover-shadow">
-          <i class="fas fa-phone"></i> <b>{{ . }}</b>
+          <i class="icon-phone"></i> <b>{{ . }}</b>
         </a><br>
         {{ end }}
 
         {{ with .Params.whatsapp }}
         <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-green w3-margin-top w3-hover-shadow">
-          <i class="fab fa-whatsapp"></i> گفت‌وگو در واتساپ
+          <i class="icon-whatsapp"></i> گفت‌وگو در واتساپ
         </a><br>
         {{ end }}
 
         {{ with .Params.instagram }}
         <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-pink w3-margin-top w3-hover-shadow">
-          <i class="fab fa-instagram"></i> مشاهده در اینستاگرام
+          <i class="icon-instagram"></i> مشاهده در اینستاگرام
         </a><br>
         {{ end }}
 
         {{ with .Params.website }}
         <a href="{{ . }}" target="_blank" class="w3-button w3-border w3-round-large w3-blue w3-margin-top w3-hover-shadow">
-          <i class="fas fa-globe"></i> ورود به وب‌سایت
+          <i class="icon-globe-alt"></i> ورود به وب‌سایت
         </a><br>
         {{ end }}
       </div>
