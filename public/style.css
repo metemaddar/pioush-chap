@@ -1,0 +1,41 @@
+.profile-card-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .profile-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    direction: rtl;
+    font-family: sans-serif;
+  }
+  
+  .profile-card h1.title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-card .description {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }

@@ -1,0 +1,11 @@
+<main style="text-align:center;">
+  <h1>پروفایل‌ها</h1>
+  <ul style="list-style:none; padding:0;">
+    {{ range .Pages }}
+      <li style="margin-bottom: 1.5rem;">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+
